@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
 <Header />
-<main className="flex-grow pt-16 h-[calc(100vh_-_8rem)] overflow-y-auto">
+<main className="flex-grow pt-16 h-screen overflow-y-auto">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
