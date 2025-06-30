@@ -9,9 +9,10 @@ import About from './pages/About';
 import Notfound from './components/Notfound';
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-<Header />
-<main className="flex-grow pt-16 h-screen overflow-y-auto">
+    <div className="min-h-screen bg-gray-100">
+<header>
+      <Navbar /></header>
+      <main className=" overflow-y-auto"> {/* Optional padding if navbar is fixed */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
@@ -19,7 +20,9 @@ function App() {
          <Route path="*" element={<Notfound />} />
           </Routes>
       </main>
-     <Footer />
+          <footer>
+      <Footer /></footer>
+   
       <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} />
     </div >
   
